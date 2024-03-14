@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reminder.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Reminder App</h1>
+            <label for="">Title:</label><br>
+            <input type="text" id="title"><br>
+            <label for="">Description:</label><br>
+            <input type="text" id="description"><br>
+            <label for="">Date:</label><br>
+            <input type="date" id="date"><br>
+            <label for="">Time:</label><br>
+            <input type="time" id="Time">     
+            
+            <button onclick="scheldudedReminder()">scheldude Reminder</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Date and Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="reminderTableBody">
+                </tbody>
+            </table>
+        </div>
+        <audio src="" id="notificationSound"></audio>
+    </main>
+    
+    <script src="./reminder.js"></script>
+</body>
+</html>

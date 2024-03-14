@@ -1,5 +1,5 @@
-if ("notification" in wndow){
-    Notification.requestPermission().then(function(persmission){
+if ("Notification" in window){
+    Notification.requestPermission().then(function(permission){
     if (Notification.permission!=="granted"){
         alert("please allow notification access !");
         location.reload()
@@ -7,25 +7,27 @@ if ("notification" in wndow){
     })
 }
 
-var timeIds=[];
+var timeoutIds = [];
+isValid = true;
 
 function scheldudedReminder(){
     var title = document.getElementById('title').value;
     var description = document.getElementById('description').value;
     var date = document.getElementById('date').value;
-    var time = document.getElementById('time').value;
+    var time = document.getElementById('Time').value;
 
     var dateTimeString = date + " " + time;
-    var scheldudedTime = newDate(dateTimeString);
-    var currentTime = newDate();
+    var scheldudedTime = new Date(dateTimeString);
+    var currentTime = new Date();
     var timeDifference = scheldudedTime - currentTime;
 
     if (timeDifference > 0){
-        addReminder(title,description,dateTimeString);
-        var timeOutId = setTimeOut(function(){
+        addReminder(title, description, dateTimeString);
+
+        var timeoutId = setTimeout(function(){
             document.getElementById('notificationSound').play();
             
-            var notification = new Notification (title,{body:description,
+            var notification = new Notification(title,{body:description,
             requireInteraction:true,
         })
         },timeDifference);
@@ -42,7 +44,7 @@ function addReminder(title,description,dateTimeString){
     var descriptionCell = row.insertCell(1);
     var dateTimeCell = row.insertCell(2);
     var actionCell = row.insertCell(3);
-
+    
     titleCell.innerHTML = title;
     descriptionCell.innerHTML = description;
     dateTimeCell.innerHTML = dateTimeString;
@@ -50,11 +52,11 @@ function addReminder(title,description,dateTimeString){
 
 }
 
-function deleteRemainder(){
+function deleteRemainder(button){
     var row = button.closest("tr");
     var index = row.rowIndex;
     clearTimeout(timeoutIds[index - 1]);
-    timeoutIds.splice(index-1);
-    row.remove()
+    timeoutIds.splice(index-1, 1);
+    row.remove();
 }
 

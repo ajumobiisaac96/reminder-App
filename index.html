@@ -1,58 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Reminder</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-        <div class="container">
-            <h1>Reminder App</h1>
-            <label for="">Title:</label><br>
-            <input type="text" id="title"><br>
-            <label for="">Description:</label><br>
-            <input type="text" id="description"><br>
-            <label for="">Date:</label><br>
-            <input type="date" id="date"><br>
-            <label for="">Time:</label><br>
-            <input type="time" id="Time">     
-            
-            <button onclick="scheldudedReminder()">scheldude Reminder</button>
-        </div>
-    
-        <div class="table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Description</th>
-                        <th>Date and Time</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody id="reminderTableBody">
-                    <tr>
-                        <td>yulgu</td>
-                        <td>hjwdf</td>
-                        <td>jshdfjhdf</td>
-                        <td>jkskf</td>
-                    </tr>
-                    <tr>
-                        <td>lslfkl</td>
-                        <td>jsdkfdf</td>
-                        <td>ldslfjksd</td>
-                        <td>kjkfj</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    
-        <audio src="" id="notificationSound"></audio>
-    
-    </main>
-    
-    <script src="script.js"></script>
+  <header>
+    <h1>Birthday Reminder</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Never Miss a Birthday Again!</h2>
+      <p>Sign up now for reminders and make every birthday special.</p>
+      <input type="email" placeholder="enter your mail"> <a href="./reminder/reminder.html" class="button">Sign Up</a>
+    </section>
+    <section class="features">
+      <h2>Key Features</h2>
+      <div class="feature">
+        <h3>Personalized Reminders</h3>
+        <p>Receive personalized birthday reminders for your loved ones.</p>
+      </div>
+      <div class="feature">
+        <h3>Easy to Use</h3>
+        <p>Simple and intuitive interface for managing your reminders.</p>
+      </div>
+      <div class="feature">
+        <h3>Stay Connected</h3>
+        <p>Stay connected with your friends and family on their special day.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Birthday Reminder</p>
+  </footer>
 </body>
 </html>

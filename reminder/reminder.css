@@ -8,7 +8,7 @@ body{
    width:100% ;
    max-width: 1000px;
    min-height: 100vh;
-   background-color: rgb(148, 187, 221);
+   background-color: #ff6b6b;
 }
 
 main{
@@ -17,11 +17,11 @@ main{
     justify-items: space-evenly;
 }
 .container{
-    background-color: aliceblue;
+    background-color: #ffccbc;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-90%,-50%);
+    transform: translate(-50%,-50%);
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -55,14 +55,14 @@ button{
     border-radius: 20px;
     border: none;
     outline: none;
-    background-color: rgb(63, 156, 238);
+    background-color: #ff6b6b;
     padding: 10px;
     cursor: pointer;
 }
 
 button:hover{
-    background-color: rgb(29, 64, 95);
-    color: rgb(29, 64, 95);
+    background-color: #ff5252;
+    color: #fff;
     color: aliceblue;
 }
 
@@ -91,7 +91,7 @@ th,td{
 }
 
 th{
-    background-color:rgb(29, 64, 95);
-    color: white;
+    background-color:#ffccbc;
+    color: rgb(29, 64, 95);
 }
 

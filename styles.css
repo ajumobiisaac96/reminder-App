@@ -1,0 +1,158 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff6b6b;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff5252;
+}
+
+.hero {
+  background-color: #ffccbc;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  margin: 0;
+  color: #333;
+  font-size: 36px;
+}
+
+.hero input{
+  border: none;
+  border-radius: 30px;
+  color: #ff5252;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  margin-right: 20px;
+  
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+}
+
+.feature img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.feature h3 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.feature p {
+  color: #666;
+  font-size: 18px;
+}
+
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 36px;
+}
+
+.about p {
+  color: #666;
+  font-size: 18px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 36px;
+}
+
+.contact p {
+  color: #666;
+  font-size: 18px;
+}
+
+.contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact ul li {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
